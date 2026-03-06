@@ -88,7 +88,7 @@ const (
 	SlowDown SpeedSignal = false
 
 	initialBackoff = time.Millisecond
-	maxBackoff     = time.Millisecond * 100
+	maxBackoff     = time.Millisecond * 10
 )
 
 func (s *speedyBackoffManager) toggleBackoff(speedSignal SpeedSignal) {
